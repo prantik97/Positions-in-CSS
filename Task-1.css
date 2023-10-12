@@ -1,0 +1,50 @@
+
+.A{
+    text-align: center;
+    top: 200px;
+    left: 200px;
+    background-color: cyan;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 1px solid burlywood;
+}
+.B {
+    bottom: 30px;
+    right: 30px;
+    background-color: cyan;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border: 1px solid burlywood;
+}
+.C {
+    left: 30px;
+    bottom: 30px;
+    background-color: cyan;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border: 1px solid burlywood;
+    
+}
+.D {
+    right: 30px;
+    top: 30px;
+    background-color: cyan;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border: 1px solid burlywood;
+    
+}
+.E {
+    top: 30px;
+    left: 30px;
+    background-color: cyan;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border: 1px solid burlywood;
+    
+}

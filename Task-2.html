@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <link rel="stylesheet" href="Task-2.css">
+</head>
+
+<body>
+    <h1>Difference between css position absolute versus relative</h1>
+    <hr />
+    <h3 class="intro">When we want to design complex layouts, we'll need to change the typical document flow and
+        override the
+        default browser styles.</h3>
+    <h3 class="intro2">To do the above, and much more, we'll use CSS's position property.This property takes in five
+        values: static,
+        relative, absolute, fixed, and sticky.
+        Here we'll focus on the relative and absolute values.</h3>
+
+    <h3 class="intro3"> <span style="font-size: 20px; background-color: gold;">position: relative;</span> changes the
+        position of the element relative to the parent element and relative to itself
+        and where it would usually be in the regular document flow of the page. This means that it's relative to its
+        original position within the parent element.It moves the tag based on where it currently is, relative to its
+        usual place and relative to its surrounding tags without affecting their layout.
+        Note: we will use top,right,bottom and left property in css to change the position. below is an example-
+    </h3>
+    <h4 class="cssProp">
+        <p>.two {</p>
+        <p>top: 15px;</p>
+        <p>left: 20px;</p>
+        <p> background-color: royalblue;</p>
+        <p>position: relative;</p>
+        <p> }</p>
+    </h4>
+    <div class="parent">
+        <div class="child one">One</div>
+        <div class="child two">Two</div>
+        <div class="child three">Three</div>
+        <div class="child four">Four</div>
+    </div>
+    <p>Above we used position:retative to the box "Two" to change the position of the box 15px from top and 20px from
+        left with respect to its parent container.</p>
+    <h3 class="intro3"> <span style="font-size: 20px; background-color: gold;">position: absolute;
+        </span>  Position an element based on its closest positioned ancestor position.
+        below is an example-
+    </h3>
+    <h4 class="cssProp">
+        <p>.two2 {</p>
+        <p>top: 830px;</p>
+        <p>left: 400px;</p>
+        <p> background-color: royalblue;</p>
+        <p>position: absolute;</p>
+        <p> }</p>
+    </h4>
+    <div class="parent">
+        <div class="child one1">One</div>
+        <div class="child two2">Two</div>
+        <div class="child three3">Three</div>
+        <div class="child four4">Four</div>
+    </div>
+    <p>Above we used position:absolute to the box "Two" and change the position of the box 830px from top and 400px from
+        left with respect to its parent container. Absolute-positioned elements are completely taken out of the regular
+        flow of the web page.
+
+        They are not positioned based on their usual place in the document flow, but based on the position of their
+        ancestor.
+
+        In the example above, the absolutely positioned square is inside a statically positioned parent.
+
+        This means it will be positioned relative to the whole page itself, which means relative to the &lt;html&gt;
+        element – the root of the page.</p>
+
+</body>
+
+</html>
